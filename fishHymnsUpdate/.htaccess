@@ -1,0 +1,4 @@
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+RewriteRule ^(.*)$ http://www.fishprogs.software/index.html#fishHymns [NE,R=301,L]
