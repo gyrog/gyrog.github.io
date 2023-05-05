@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>FrugalPup - Frugal installs</title>
+<link rel="SHORTCUT ICON" href="gnibbles.ico" />
+<link rel="stylesheet" type="text/css" href="frugalpup.css">
+</head>
+
+<body>
+
+<h1>FrugalPup - Frugal installs</h1>
+
+<p>Frugal installs are not "frugal" in capabilities, they are "frugal" in their disk usage.<br />
+A frugal install is installed to a directory, not a partition. So a single partition can support many Puppy frugal installs.</p>
+
+<p>A Puppy Linux release contains a 'vmlinuz', 'initrd.gz' and a small number of '.sfs' files.<br />
+Each '.sfs' file is a compressed, read-only filesystem that can be mounted as a pseudo-partition.<br />
+Together these few '.sfs' files contain the many files that are Puppy Linux.<br />
+A frugal install accesses the contents of these '.sfs' files by mounting them, it does not extract their contents.<br />
+So a typical Puppy frugal install directory will contain about 10 files.</p>
+
+<p>The root filesystem of a Puppy frugal install is a stack, or union, of directories that appear to be merged, via an "aufs" pseudo-filesystem.<br />
+The mount-point of each '.sfs' file is used as a read-only layer in this stack.</p>
+
+
+</body>
+</html>

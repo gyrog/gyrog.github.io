@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>fishHymns - Manage Tunes</title>
+<link rel="SHORTCUT ICON" href="fishB.ico" />
+<link rel="stylesheet" type="text/css" href="aw.css">
+</head>
+<body>
+
+<h2 class="awverh"><a href="index.html">fishHymns</a> - Manage Tunes screen</h2>
+<div class="awverd"> <br />
+Version: 1.1.1<br />
+<br /></div>
+
+<p>A dialog to manage the collection of tunes known to <a href="index.html">fishHymns</a>.</p>
+
+<h4 class="awbot">"Tune List" panel</h4>
+<p class="awin1 awtop">Shows the list of all currently known tunes.</p>
+
+<h4 class="awbot">"Tune" panel</h4>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:70%;">
+  <col width="110" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Add"</td>
+      <td>Opens a standard file selection dialog, to select a midi file to copy into the tune collection.<br />
+      If a file is selected, the "Edit" dialog is opened to allow the specification of meter(s).</td>
+    </tr>
+    <tr>
+      <td align="center">"<a href="tuneEdit.html">Edit</a>"</td>
+      <td>Opens a dialog to enter or change the list of meters implemented by this tune.</td>
+    </tr>
+    <tr>
+      <td align="center">"Play"</td>
+      <td>Play the midi file for the selected tune.</td>
+    </tr>
+    <tr>
+      <td align="center">"Stop"</td>
+      <td>If active, can be used to stop playing the midi, before it is finished.</td>
+    </tr>
+    <tr>
+      <td align="center">"Rename"</td>
+      <td>Renames the tune, and it's files.</td>
+    </tr>
+    <tr>
+      <td align="center">"Delete"</td>
+      <td>Delete the selected tune from the collection, and it's associated files.<br />
+      Note: This does not delete the original midi file, that was selected in the "Add" dialog.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"All Tunes" panel</h4>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:70%;">
+  <col width="110" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Export"</td>
+      <td>Export all currently defined tunes to "exportedTunes.zip".</td>
+    </tr>
+    <tr>
+      <td align="center">"Import"</td>
+      <td>Import tunes from "exportedTunes.zip", without overriding any existing tunes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"App" panel</h4>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:70%;">
+  <col width="110" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Help"</td>
+      <td>Shows this screen.</td>
+    </tr>
+    <tr>
+      <td align="center">"Ok"</td>
+      <td>Closes the screen.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">NOTE:</h4>
+<p class="awin1 awtop">There is no "Cancel" button for this dialog, since it is directly creating, renaming, and deleting files.</p>
+
+</body>
+</html>

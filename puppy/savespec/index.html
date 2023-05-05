@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Savespec</title>
+<link rel="SHORTCUT ICON" href="../fish.ico" />
+</head>
+
+<body>
+
+<h1>SAVESPEC</h1>
+
+<p>A 'SAVEMARK' file on steroids.<br />
+Instead of containing a partition number like a 'SAVEMARK' file,<br />
+a 'SAVESPEC' file contains "<b>partition-id</b>[:<b>sub-directory</b>]", so it can specify anywhere as a save location.</p>
+
+<p><b>partition-id</b><br />
+Can be a partition UUID, Volume Label, or name.<br />
+<b>sub-directory</b><br />
+Is an optional parameter that defines the sub-directory within the partition that contains the "savefolder".<br />
+If it is omitted, then the ":" should also be omitted.</p>
+
+<p>A 'SAVESPEC' file is written by the Puppy utility 'shutdownconfig', and processed by the 'init' script if it exists.</p>
+
+<h2>shutdownconfig</h2>
+
+<p>The <b>partition select</b> dialog may list partitions on a device other than the disk containing the install partition,<br />
+but it does not list small partitions.</p>
+
+<p>The <b>change folder</b> dialog allows the specification of multiple level sub-directories.</p>
+
+<h2>autosave</h2>
+
+<p>If the install directory resides on a Linux partition, and it contains an 'AUTOSAVE' file,<br />
+on first shutdown, only the first dialog from 'shutdownconfig' is shown,<br />
+if the 'SAVE' button is clicked, the save proceeds automatically, no more dialogs are shown.</p>
+
+<h2>Download files</h2>
+
+<p>The 'savespec...tar.xz' files contain supporting files for only the <b>savespec</b> facility.<br />
+The 'spec+auto...tar.xz' files contain supporting files for both the <b>savespec</b> and <b>autosave</b> facilities.<br />
+To test, extract one of 'tar.xz' files into a fresh frugal install of the corresponding Puppy , and reboot.<br />
+The 'woof.tar.gz' file contains patched woof-ce 'init' and 'shutdownconfig' files and their respective patch files.<br />
+<a href="http://www.mediafire.com/folder/ufo1lerdg73j0/savespec">Download directory</a></p>
+
+<h2><a href="../index.html">Gyrog's Puppy Linux stuff</a></h2>
+
+<h2><a href="mailto:gyro17@yahoo.com">E-mail me</a></h2>
+
+</body>
+</html>

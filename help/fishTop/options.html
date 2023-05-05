@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>fishTop - Options</title>
+<link rel="SHORTCUT ICON" href="fishY.ico" />
+<link rel="stylesheet" type="text/css" href="aw.css">
+</head>
+<body>
+
+<h2 class="awverh"><a href="index.html">fishTop</a> - Options screen</h2>
+<div class="awverd"> <br />
+Version: 3.1.3<br />
+<br /></div>
+
+<h4 class="awbot">"Save file" panel</h4>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:96%;">
+  <col width="150" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Filename"</td>
+      <td>The file used to store the current list. There must always be one of these defined.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"Source folders for collections" panel</h4>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:96%;">
+  <col width="150" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Primary path"</td>
+      <td>The path to the folder that contains the primary collections.<br />
+      If the slides for hymns are stored in the folder "C:\path\to\Documents\ChurchSlides\Hymns",<br />
+      and the slides for prayers are stored in the folder "C:\path\to\Documents\ChurchSlides\Prayers",<br />
+      then "C:\path\to\Documents\ChurchSlides" is the "Primary path", containing 2 collections "Hymns" and "Prayers".
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Enable Secondary"</td>
+      <td>Tick to enable the facility for adding 2 files for each item.<br />
+      Note: The "Secondary path" must be an existing folder, for this to alter the way that the "<a href="select.html">Add</a>" button functions.
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Secondary is first"</td>
+      <td>Tick to ensure that the file from the secondary collections, is stored first, and is the one displayed in lists.<br />
+      If the primary collections are slides, and the secondary collections are music, then this would usually be unchecked.
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Secondary path"</td>
+      <td>The path to the folder that contains the secondary collections.<br />
+      If the files containing music for hymns are stored in the folder "C:\path\to\Documents\ChurchMusic\Hymns",<br />
+      and the files containing music for voluntaries are stored in the folder "C:\path\to\Documents\ChurchMusic\Voluntaries",<br />
+      then "C:\path\to\Documents\ChurchMusic" is the "Secondary path", containing 2 collections "Hymns" and "Voluntaries".<br />
+      Selecting a file in the music "Hymns" collection could find a corresponding file in the slides "Hymns" collection,<br />
+      and both get included in the item.<br />
+      Selecting a file in the music "Voluntaries" collection can never find a corresponding file,<br />
+      so the item will contain only the music file.<br />
+      There can only be corresponding files, if there are corresponding collections.
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Mirror Primary and Secondary non-corresponding folders"</td>
+      <td>Click this button to create links between the non-corresponding folders in the Primary and Secondary folders.<br />
+	  This is done so that folders that are unique to Primary or Secondary are always available to the "<a href="select.html">Add</a>" button.<br />
+      So, if "Enable Secondary" is ticked, slides in "C:\path\to\Documents\ChurchSlides\Prayers"<br />
+      will appear in "C:\path\to\Documents\ChurchMusic\Prayers", and can be selected.<br />
+      Similarly, in normal mode, music in "C:\path\to\Documents\ChurchMusic\Voluntaries"<br />
+      will appear in "C:\path\to\Documents\ChurchSlides\Voluntaries", and can be selected.<br />
+      Note: These links are not interpreted as corresponding collections.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"Hint messages" panel</h4>
+<p class="awin1 awtop awbot">These short help messages, at the top of the screen, provide information on what to do.</p>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:96%;">
+  <col width="150" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Default"</td>
+      <td>Message to be displayed when there are items available.</td>
+    </tr>
+    <tr>
+      <td align="center">"Empty"</td>
+      <td>Message to be displayed when there are no items available.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"Main page appearance" panel</h4>
+<p class="awin1 awtop awbot">These facilities may be used to improve the appearance of the main page.</p>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:96%;">
+  <col width="150" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Item font size"</td>
+      <td>Set this to change the size of the text on the buttons. Specifiy the font size in points.<br />
+      Usually not needed.</td>
+    </tr>
+    <tr>
+      <td align="center">"Scroller width"</td>
+      <td>If you get a horizontal scroll bar, set this to add extra pixles to the width.<br />
+      Usually not needed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"Executable for Extension" panel</h4>
+<p class="awin1 awtop awbot">Use these fields to overide the default program used for a file extension.</p>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:96%;">
+  <col width="150" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Extension"</td>
+      <td>Files with this extension will be processed by the program specified by the "Filename" field.<br />
+        Examples: "pps" or "ppsx".
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Control dialog"</td>
+      <td>This drop down list allows one of the following options to be chosen:<br />
+        "None" - The program specified in "Filename" is simply executed.<br />
+        "WithStopButton" - The specified program is executed, and a dialog is opened containing a "Stop" button.<br />
+        "PowerPointNavigate" - "Filename" and "Parameter format" are ignored. A dialog is opened to navigate PowerPoint via OLE.
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Filename"</td>
+      <td>This program will be run to process files with the extension specifed in the "Extension" field.<br />
+        Note: This field must contain the full path to the executable.
+      </td>
+    </tr>
+    <tr>
+      <td align="center">"Paramenter format"</td>
+      <td>This contains a formating string for the parameters passed to the program defined in the "Filename" field.<br />
+        Usually it contains "%s" to represent the data file that is the item.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="awbot">"App" panel</h4>
+<table class="awin1 awtop" border="1" cellspacing="0" cellpadding="5" style="width:96%;">
+  <col width="150" />
+  <col />
+  <tbody>
+    <tr>
+      <td align="center">"Help"</td>
+      <td>Shows this screen.</td>
+    </tr>
+    <tr>
+      <td align="center">"Cancel"</td>
+      <td>Closes the screen, ignoring any changes.</td>
+    </tr>
+    <tr>
+      <td align="center">"Ok"</td>
+      <td>Closes the screen, saving any changes.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

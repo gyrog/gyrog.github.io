@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Dircrypt help</title>
+<link rel="SHORTCUT ICON" href="dircrypt_help.ico" />
+</head>
+
+<body>
+
+<h1><img src="dircrypt.png"> Dircrypt</h1>
+<p>Dircrypt is a simple GUI utility to manage a directory encryption facility.<br />
+These facilities make use of 2 directories, an encrypted directory that contains the actual files in an encrypted form,<br />
+and a plaintext directory which is used as a mount point that appears to contain the files in an unencrypted form, when the stash is mounted.<br />
+Directly accessing the encrypted files via the encrypted directory is not recommended.</p>
+
+<p>A stash is setup when an encrypted directory is defined, a plaintext directory is defined and a password is assigned.<br />
+This setup process creates both directories, if they do not already exist, and then mounts the new stash.</p>
+<p>The plaintext directory is deleted on unmount, and created on mount.<br />
+This is to avoid any access to the plaintext directory while the stash is unmounted.</p>
+
+<p>Dircrypt currrently supports the "encfs" and "gocryptfs" encryption facilities.<br />
+"encfs" is available in the "Puppy Package Manager" of many Puppies.<br />
+"gocryptfs" is available in the "Puppy Package Manager" of only a few recent Puppies.<br />
+A 64bit "gocryptfs" is also available from the <a href=https://github.com/rfjakob/gocryptfs/releases>gocryptfs download site</a>.</p>
+
+<p>Dircrypt supports only a single encryption facility at a time.<br />
+It also supports the encryption of only a single directory at a time.</p>
+<p>At first run, you will be asked to choose an encryption facility, if there is more than 1 supported and installed.<br />
+You may also be asked to choose an encrytion level, if the chosen encryption facility supports them.</p>
+<p>Dircrypt can setup, mount, unmount, change the password for, and delete, an encrypted stash using specified directories and using the specified encryption facility.</p>
+
+<img src="dircrypt_main.png" alt="Dircrypt main screen">
+
+<p><b>Help</b> button:<br />
+Displays this page in the default browser.</p>
+
+<p><b>Status</b> button:<br />
+Shows a text dialog containg information about what is defined, setup, or mounted. Useful for discerning what is the next appropriate action.</p>
+
+<p><b>Setup and Mount encrypted stash</b> button:<br />
+Opens 2 dialogs to allow specification of the following:<br />
+the directory that will contain the actual encrypted files,<br />
+and the directory that will be the mount point that appears to contain the plaintext files. This plaintext directory is usually required to be different from the encrypted directory.<br >
+If the specified encrypted directory has already been setup with a password, a dialog to enter that password and mount the existing stash, will be displayed.<br />
+Otherwise, a dialog to assign a password to the new stash, and then setup and mount it, will be displayed.</p>
+
+<p><b>Mount encrypted stash</b> button:<br />
+Displays a dialog to enter the password for the defined stash. If the provided password matches the original specified password, the stash is mounted, providing access to the files via the plaintext directory.</p>
+
+<p><b>Unmount encrypted stash</b> button:<br />
+Unmounts a mounted stash, and then deletes the now empty plaintext directory so that files will not be stored there while the stash is unmounted, since these would not be encrypted.</p>
+
+<p><b>Change password of encrypted stash</b> button:<br />
+Opens a dialog to change the password for the defined stash.<br />
+The stash must already be unmounted.</p>
+
+<p><b>Delete encrypted stash</b> button:<br />
+This deletes the  directories of the currently defined stash, and clears the definitions of the directories.<br />
+The stash must already be unmounted.</p>
+
+<p>A typical creation session would start with the <b>Setup</b> button.<br />
+After files are added to the plaintext directory, the <b>Unmount</b> button would be selected to unmount the stash.</p>
+<p>A typical usage session would start with the <b>Mount</b> button, followed by a time of accessing the files via the plaintext directory, and then unmounting the stash using the <b>Unmount</b> button.</p>
+<p>The <b>Status</b> button can be used at any time to find  out where you're at.</p>
+
+<p>Dircrypt stores its setup in "$HOME/.config/dircrypt.conf"</p>
+
+<h2><a href="http://www.mediafire.com/folder/2scl6j5e09xxb/dircrypt">Dircrypt download directory</a></h2>
+
+<h2><a href="../index.html">Gyrog's Puppy Linux stuff</a></h2>
+
+<h2><a href="mailto:gyro17@yahoo.com">E-mail me</a></h2>
+
+</body>
+</html>

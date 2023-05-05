@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>fishHymns - Add Hymn</title>
+<link rel="SHORTCUT ICON" href="fishB.ico" />
+<link rel="stylesheet" type="text/css" href="aw.css">
+</head>
+
+<body>
+<h2 class="awverh"><a href="index.html">fishHymns</a> - Add Hymn</h2>
+<div class="awverd"> <br />
+Version: 1.1.1<br />
+<br /></div>
+
+<p>There is no single "Add" screen.</p>
+
+<p>The process consists of the following steps:</p>
+<ol>
+  <li>Establish a name for the new midi file.</li>
+  <li>If possible, get "Meter" and "Verses" from stored hymn books.</li>
+  <li>Open the "<a href="edit.html">Edit</a>" dialog, defaulting to found information, if any.</li>
+</ol>
+
+<h4 class="awbot">Simple case</h4>
+<p class="awin1 awtop">The "<a href="options.html">Use collections</a>" option has not been set.</p>
+<p class="awin1">A simple dialog opens in which the name of the new midi file is entered.<br />
+If this name contains a reference to a stored hymn book, e.g. "(AHB 123)", then data will be retrieved from the stored hymn book.<br />
+An "<a href="edit.html">Edit</a>" dialog will be opened. It will show "Meter" and "Verses" values if they could be retrieved, else it will be empty.<br />
+On sucessfull completion of the dialog, the new midi file is generated.</p>
+
+<h4 class="awbot">Hymn Book case</h4>
+<p class="awin1 awtop">The "<a href="options.html">Use collections</a>" option has been set.<br />
+And the collection name matches a stored hymn book. e.g "AHB", (The Australian Hymn Book).</p>
+<p class="awin1">A standard file selection dialog opens, listing all the hymns in the hymn book.<br />
+Selecting one of these, sets the name of the new midi file to be the same as the list entry, minus the extension.<br />
+An "<a href="edit.html">Edit</a>" dialog will be opened with the "Meter" and "Verses" values set to those in the stored hymn book.<br />
+On sucessfull completion of the dialog, the new midi file is generated.</p>
+
+<h4 class="awbot">Other collections case</h4>
+<p class="awin1 awtop">The "<a href="options.html">Use collections</a>" option has been set.<br />
+And a corresponding collection exists for the selected midi folder.</p>
+<p class="awin1">A standard file selection dialog opens, allowing the selection of a folder represeting a corresponding collection.<br />
+Selecting one of these files, sets the name of the new midi file to be the same as the list entry, minus the extension.<br />
+If this name contains a reference to a stored hymn book, e.g. "(AHB 123)", then data will be retrieved from the stored hymn book.<br />
+An "<a href="edit.html">Edit</a>" dialog will be opened. It will show "Meter" and "Verses" values if they could be retrieved, else it will be empty.<br />
+On sucessfull completion of the dialog, the new midi file is generated.</p>
+
+</body>
+</html>

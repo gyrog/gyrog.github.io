@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Ziprelease</title>
+<link rel="SHORTCUT ICON" href="../fish.ico" />
+</head>
+
+<body>
+
+<h1>ZIP-RELEASE</h1>
+
+<h2>Axioms</h2>
+
+<p>Uefi booting does not need or use an 'mbr',<br />
+just an appropriately populated '/EFI/' directory in the root of a 'fat32' partition.</p>
+
+<p>All OS's can extract the contents of a '.zip' archive.</p>
+
+<h2>Description</h2>
+
+<p>This project demonstrates that Puppy Linux does need to be realeased as a '.iso' file, there aternatives.</p>
+
+<p>Each archive contains a copy of a Puppy Linux frugal install, suitable for use on a usb stick.<br />
+This includes Grub2 configured to boot the included Puppy Linux.<p>
+
+<p>The advantage of using a '.zip' archhive is that there is no need to install any 3rd-party software to start using Puppy Linux.</p>
+
+<h2>Usage</h2>
+
+<p>Start with an empty usb stick.<br />
+Download one of the '.zip' files and extract it's contents onto the usb stick.<br />
+On Windows you can right-click on the '.zip' file, and select "Extract All...".</p>
+
+<p>If using Windows to do this, it's probably a good idea to execute the '\win-util\Turn_Off_Fast_Startup.bat' file that is on the usb stick.</p>
+
+<p>On some machines, that will be enough, uefi boot the usb stick.<br />
+On others, you may need to define the fat32 partition as bootable;<br />
+On Linux set the "boot" flag using "gparted";<br />
+On Windows "Set partition active" in "Disk Management".</p>
+
+<h2>.sfs files</h2>
+
+<p>These are a more recent development.<br />
+They have the same contents as a '.zip' file.</p>
+
+<p>The advantage of a '.sfs' file is that it can be directly booted by Grub2, just like Grub2 can boot a '.iso' file.</p>
+
+<p>The disadvantage of a '.sfs' file is the absence of support in native Windows for extracting it's contents.<br />
+Although it can be extracted to a usb stick with a command like:<br />
+"unsquashfs -f -d /mnt/sdc1 /path/to/the/Puppy_release.sfs"</p>
+
+<p>The contents of a '.sfs' file can be listed with a command like:<br />
+"unsquashfs -l /path/to/the/Puppy_release.sfs"</p>
+
+<p>Note: Please do not confuse one of these '.sfs' files that contain a complete Puppy frugal install with a 'puppy_...sfs' file, which is one of the files inside it.</p>
+
+<h2>Download files</h2>
+
+<p>Any '.zip' or '.sfs' files of Puppy releases, are available <a href="https://www.mediafire.com/folder/eto6n8qqstpzx/ziprelease">here</a>.</p>
+
+<h2><a href="../index.html">Gyrog's Puppy Linux stuff</a></h2>
+
+<h2><a href="mailto:gyro17@yahoo.com">E-mail me</a></h2>
+
+</body>
+</html>
