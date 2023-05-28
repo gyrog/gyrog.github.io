@@ -1,4 +1,0 @@
-#Options +FollowSymLinks
-Options +SymLinksIfOwnerMatch
-RewriteEngine on
-RewriteRule ^(.*)$ http://www.mediafire.com/folder/k2j223jzddy9x/firmware [R=301,L]
